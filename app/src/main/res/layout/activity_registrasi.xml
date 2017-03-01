@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_registrasi"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.priambodo_pangestu.pkl_app_17.Registrasi">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:text="Registrasi Pengguna Aplikasi PKL Mobile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/textView2"
+                android:textSize="18sp"
+                android:textAlignment="center" />
+
+            <TextView
+                android:text="Email :"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView2"
+                android:layout_alignStart="@+id/textView2"
+                android:layout_marginTop="36dp"
+                android:id="@+id/emailText" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textEmailAddress"
+                android:ems="10"
+                android:id="@+id/emailField"
+                android:layout_below="@+id/emailText"
+                android:layout_alignStart="@+id/emailText"
+                android:hint="Masukan Alamat Email" />
+
+            <TextView
+                android:text="Nama Lengkap :"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/namaText"
+                android:layout_below="@+id/emailField"
+                android:layout_alignStart="@+id/emailField" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:ems="10"
+                android:layout_below="@+id/namaText"
+                android:layout_alignStart="@+id/namaText"
+                android:id="@+id/namaField"
+                android:hint="Masukan Nama Lengkap !" />
+
+            <TextView
+                android:text="Alamat Lapak :"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/namaField"
+                android:layout_alignStart="@+id/namaField"
+                android:id="@+id/lapakText" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:ems="10"
+                android:layout_below="@+id/lapakText"
+                android:layout_alignStart="@+id/lapakText"
+                android:id="@+id/alamatField"
+                android:hint="Masukan Alamat Lapak !" />
+
+            <TextView
+                android:text="Nomor HP :"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/nomorText"
+                android:layout_below="@+id/alamatField"
+                android:layout_alignStart="@+id/alamatField" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:ems="10"
+                android:layout_below="@+id/nomorText"
+                android:layout_alignStart="@+id/nomorText"
+                android:id="@+id/nomorField"
+                android:hint="Masukan Nomor HP !" />
+
+            <TextView
+                android:text="Tanggal Lahir :"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/nomorField"
+                android:layout_alignStart="@+id/nomorField"
+                android:id="@+id/tanggalText" />
+
+            <DatePicker
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tanggalText"
+                android:id="@+id/datePicker"
+                android:layout_alignStart="@+id/tanggalText" />
+
+            <TextView
+                android:text="Produk Unggulan :"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView10" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:ems="10"
+                android:id="@+id/editText8"
+                android:hint="Masukan Nama Produk !" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Button
+                    android:text="Batal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/buttonBatal" />
+
+                <Button
+                    android:text="Simpan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/buttonSimpan"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true" />
+            </RelativeLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>
